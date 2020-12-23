@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
   background: #fff;
   color: #798a9a;
@@ -553,7 +555,12 @@ a {
     display: block; }
 
 .site-footer {
-  padding: 3em 0; }
+  padding: 3em 0; 
+  background-image: url('../images/footer.jpg');
+  width: 100%;
+  background-size: 100% 100%;
+  height: 200;
+}
   .site-footer p:last-child {
     margin-bottom: 0; }
   .site-footer .social-item {
@@ -604,3 +611,198 @@ a {
   .block-47 .block-47-quote .block-47-quote-author {
     font-size: 14px;
     color: #666666; }
+
+/*
+    body{
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    } */
+    
+    .sectionmodal{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #F5F5F5;
+      font-family: Roboto;
+    }
+    
+    .h1modal{
+      font-size: 40pt;
+      font-weight: 500;
+      color: #363638;
+    }
+    
+    .containermodal {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 80%;
+    }
+    
+    .item2 {
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin: 10px 1%;
+      min-width: 320px;
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+    }
+    
+    .item2:hover{
+      cursor: pointer;
+    }
+    
+    .item2 *{
+      transition: all 0.35s ease-in-out;
+    }
+    
+    .img2 {
+      max-width: 100%;
+      vertical-align: top;
+      height: 310px;
+    }
+    
+    .item2:hover img {
+      opacity: 0;
+    }
+    
+    .text{
+      width: 80%;
+      height: 90%;
+      position: absolute;
+      top: -100px;
+      left: 10%;
+      color: #57d131;
+    }
+    
+    .text h3{
+      color: black;
+    }
+    
+    .item2:hover .text{
+      top: 20%;
+    }
+    
+    .item2:hover .button{
+      bottom: 20%;
+    }
+    
+    .item2 .button{
+      position: absolute;
+      bottom: -100px;
+      left: 25%;
+      width: 50%;
+      border: 3px solid #57d131;
+      padding: 15px;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .button:hover{
+      background-color: #57d131;
+      color: #F5F5F5;
+    }
+    
+    /* Modal */
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+    
+    .modal-content {
+      background-color: #F5F5F5;
+      margin: 5% auto;
+      box-sizing: border-box;
+      width: 700px;
+      max-height: 714px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    .scale{
+      animation: scale 0.5s;
+      animation-fill-mode: forwards;
+    }
+    
+    @keyframes scale{
+      from{transform: scale(0);}
+      to{transform: scale(1);}
+    }
+    
+    #img{
+      width: 100%;
+      height: 450px;
+    }
+    
+    #details{
+      padding: 25px;
+      text-align: left;
+      position: relative;
+      height: 264px;
+      box-sizing: border-box;
+      border-top: 1px solid #363638;
+    }
+    
+    #details *{
+      transition: all .3s;
+    }
+    
+    #title{
+      padding-bottom: 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    #details .button{
+      position: absolute;
+      width: 30%;
+      background-color: #57d131;
+      color: #F5F5F5;
+      text-align: center;
+      left: 25px;
+      bottom: 35px;
+      padding: 15px;
+    }
+    
+    #details i{
+      position: absolute;
+      bottom: 30px;
+      right: 25px;
+      font-size: 3rem;
+      color: #57d131;
+    }
+    
+    #details .button:hover,
+    i:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+    
+    /* Close Button */
+    .close {
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      right: 10px;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #363638;
+      text-decoration: none;
+      cursor: pointer;
+    }
